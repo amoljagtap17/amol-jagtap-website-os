@@ -2,7 +2,38 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+Follow the quick start guide from the below URL to setup clerk authentication
+
+[https://clerk.com/docs/quickstarts/nextjs](https://clerk.com/docs/quickstarts/nextjs)
+
+I have used sign up and sign in options. Replace as per your need.
+
+Rename `.env_template.txt` to `.env
+`
+
+Update the environment variables accordingly.
+
+To generate prisma client run the following command
+
+```bash
+npx prisma generate
+```
+
+To populate the Mongo database with seed data, run the following command
+
+```bash
+npm run prisma:seed
+```
+
+The above command would run the seed script from `prisma/seed.ts`
+
+Install npm dependencies using the following command
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
